@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<!-- 这句配置是什么意思  -->
+<!-- 这里如果使用struts2-spring-plugin-2.1.8.jar包的话就没有问题，
+	但是如果使用2.3.24的话就会直接报错  -->
+<constant name="struts.objectFactory" value="spring"></constant>
+<include file="struts2/struts-user.xml"></include></struts>

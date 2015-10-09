@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="userpackage" namespace="/usernamespace" extends="struts-default">
+		<action name="sshaction" class="com.kdyzm.ssh.struts2.action.SSHAction" method="sshTest">
+			<result name="ssh">
+				<param name="location">
+					/main/index.jsp
+				</param>
+			</result>
+		</action>	
+	</package>
+</struts>
